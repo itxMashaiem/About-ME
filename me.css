@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: context-menu;
+}
+
+/* first btn-start */
+.first {
+    --color: #00A97F;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    margin-left: 15px;
+}
+
+.first a:hover {
+    --color: rgb(97, 199, 240);
+}
+
+.first a {
+    --color: #00A97F;
+
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+
+    text-decoration: none;
+
+}
+
+.first::before,
+.first::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.first::before {
+    top: -1em;
+    left: -1em;
+}
+
+.first::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.first:hover::before,
+.first:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.first:hover {
+    color: rgb(10, 25, 30);
+}
+
+.first:active {
+    filter: brightness(.8);
+}
+
+/* first btn-end */
+
+
+/* more btn-start */
+.more:hover {
+    color: #ffffff;
+    background: #000;
+}
+
+.more {
+    color: #000;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 26px;
+    transition: 0.5s;
+}
+
+/* more btn-end */
+
+/* about-start */
+.about {
+    font-size: 20px;
+    margin: auto;
+    padding: 15px;
+}
+
+/* about-end */
+
+
+/* main-title-start */
+.main-title {
+    text-align: center;
+    color: rgb(60, 117, 60);
+    border-bottom: 3px solid rgb(60, 117, 60);
+    width: 600px;
+    margin: auto;
+    border-radius: 16px;
+}
+
+/* main-title-end */
+
+/* first-name-start */
+.first-name {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/* first-name-end */
+
+/*Youtube-Video-Start*/
+.youtube-video{
+    width:100;
+    height:100;
+}
